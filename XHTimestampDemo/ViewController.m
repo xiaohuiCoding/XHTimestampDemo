@@ -28,6 +28,23 @@
     NSString *string = [NSString stringWithFormat:@"%ld",stamp];
     NSString *resultString = [[TimeTool alloc] getBabyDetailAge:[NSDate dateWithTimeIntervalSince1970:[string floatValue]]];
     NSLog(@"时间戳转字符串: %@ -> %@",string,resultString);
+    
+    
+    
+//    NSInteger timestamp = 1533106800;
+//    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timestamp];
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    dateFormatter.dateFormat = @"yy年MM月dd日 HH:mm:ss";
+//    NSString *dateString = [dateFormatter stringFromDate:date];
+//    NSLog(@"%@",dateString);
+    
+    
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    dateFormatter.dateFormat = @"yy年MM月dd日 HH:mm:ss";
+//    NSString *dateString = @"2018年08月01日 15:00:00";
+//    NSDate *date = [dateFormatter dateFromString:dateString];
+//    NSInteger timestamp = date.timeIntervalSince1970;
+//    NSLog(@"%ld",timestamp);
 }
 
 @end
